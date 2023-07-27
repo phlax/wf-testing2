@@ -1,0 +1,17 @@
+
+
+on:
+  pull_request:
+  push:
+
+
+jobs:
+  job0:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Do nothing
+      run: |
+        echo "do nothing ..."
